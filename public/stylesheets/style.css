@@ -1,0 +1,112 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+mainMessage{
+  margin: 20px 0 50px;
+}
+
+.description{
+  margin: 50px 0px 0px 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  color: rgb(59, 52, 52);
+}
+
+.add{
+  font-size: 2rem;
+  color: green;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 0 10px -3px grey;
+  text-align: center;
+}
+
+.newMessage{
+  padding: 0;
+  margin: 30px 40px 15px;
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px -5px grey;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.newMessage > a{
+  padding-right: 10px;
+  text-decoration: none;
+  display: inline-flex;  
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.newMessage:hover{
+  box-shadow: 0px 0px 10px green;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div.message{
+  margin-left: 50px;
+  max-width: calc(100vw - 250px);
+  border: 1px solid grey;
+  box-shadow: -2px 0px 0px purple;
+  border-radius: 10px;
+}
+
+div.head{
+  padding: 0 10px 0 2px;
+  color: rgb(55, 55, 55);
+  display: flex;
+  justify-content: space-between;
+}
+
+.messageText{
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  margin: 20px;
+  display: grid;
+  border: 2px solid grey;
+  padding: 5px 10px 10px;
+  width: 300px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+input#name{
+  margin-bottom: 10px;
+}
+
+textarea#message{
+  resize: none;
+  height: 100px;
+}
+
+button#submit{
+  place-self: center;
+  margin-top: 10px;
+  padding: 3px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}

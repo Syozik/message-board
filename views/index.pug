@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  button.newMessage
+    a(href="/new")
+      .add +
+      i.text New Message
+  div.messages
+    for message in messages
+      div.message
+        div.head
+          h4.user= message["user"]
+          - const date = message["added"].toString().split(" ").slice(1, 5).join(" ")
+          h5.added= (date)
+        h3.messageText= message["text"]
+  

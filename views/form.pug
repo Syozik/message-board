@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+    .form
+        form(method="POST" action="/new")
+            label(for="name")#nameLabel Name 
+            input(id="name" type="text" name="name" placeholder="John" required)
+            label(for="message")#messageLabel Message
+            textarea(id="message" type="text" name="message" required)
+            button(type="submit" id="submit") Submit
