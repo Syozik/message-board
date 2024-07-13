@@ -16,7 +16,7 @@ const messages = [
 ];
 
 router.get('/', function(req, res, next) {
-  res.render('index', { messages: messages.reverse() });
+  res.render('index', { messages: [...messages].reverse() });
 });
 
 router.post("/new", function(req, res, next){
